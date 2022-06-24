@@ -1,33 +1,40 @@
 @import url(https://fonts.google.com/specimen/Be+Vietnam);
 
-*{
+* {
     box-sizing: border-box;
     margin: 0px;
 }
 
-.barra-navegacion{
-    display: flex;
-    justify-content: space-between;
-    margin: 6% 3% 6% 3%;
-}
-body{
+body {
     font-family: 'Be Vietnam', sans-serif;
 }
-header{
+
+/********* Header ***********/
+header {
     background-image: url("../img/bg-tablet-pattern.svg");
     background-size: cover;
     background-position-x: 30px;
     background-repeat: no-repeat;
-     background-position-y: -30px; 
+    background-position-y: -30px;
 }
 
-.graficos img{
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: 6% 3% 6% 3%;
+}
 
+.graphs img {
     width: 95vw;
-    height: auto;   
+    height: auto;
     margin: 0 auto;
     display: block;
     margin-top: 10%;
     margin-bottom: 10%;
+}
 
+/******* Footer ********/
+footer {
+   background-color: rgb(35, 44, 81);
+    color: white;
 }
