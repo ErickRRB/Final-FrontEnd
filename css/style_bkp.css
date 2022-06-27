@@ -85,6 +85,8 @@ button {
     font-size: 0.8em;
     cursor: pointer;
     padding: 12px 30px;
+    /*New*/
+    transition-duration: 0.4s;
 
 }
 
@@ -92,15 +94,23 @@ button {
     box-shadow: 0 7px 10px rgba(250, 129, 73, 0.534);
 }
 
-button.red:hover {
+/******Animacion de boton ********/
+.button.red:hover {
     background-color: rgb(223, 158, 142);
     color: white;
+    /*New*/
+    transition-duration: 0.1s;
+
 }
 
-button.white:hover {
+
+.button.white:hover {
     background-color: white;
+    transition-duration: 0.1s;
     color: rgb(223, 158, 142);
+
 }
+
 
 
 header {
@@ -651,8 +661,9 @@ footer .search button {
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
 
-        
+
     }
+
     /*** TESTIMONIES GENERICO ***/
     .testimonies .item img {
 
@@ -738,6 +749,6 @@ footer .search button {
     footer .copyright {
         order: -1;
     }
-    
+
 
 }
