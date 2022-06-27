@@ -154,7 +154,6 @@ header .sections a {
     flex-direction: column;
     margin: 0 auto;
     width: auto;
-    /*height: 386px;*/
     position: relative;
 }
 
@@ -223,9 +222,6 @@ footer div:nth-child(3)>* {
     margin-top: 40px;
 }
 
-footer .social-networks img {
-    margin: 0px 4px;
-}
 
 footer .sections {
     display: flex;
@@ -245,7 +241,6 @@ footer .sections nav a {
 }
 
 footer .search input[type=email] {
-    /*transition: width 0.4s ease-in-out;*/
     padding: 12px 25px;
     border-radius: 50px;
 }
@@ -341,7 +336,6 @@ footer .search button {
         margin-bottom: 100px;
     }
 
-    /*** TESTIMONIES GENERICO ***/
     .testimonies .item img {
         margin-top: -35px;
         width: 70px;
@@ -407,8 +401,6 @@ footer .search button {
 
     /***************** FOOTER ******************/
     footer {
-        background-color: #1E1E26;
-        color: white;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -463,6 +455,10 @@ footer .search button {
         justify-content: space-between;
         width: 30%;
     }
+
+    footer .social-networks img {
+        margin: 0px 4px;
+    }
 }
 
 /***************FIN DESTOP*********************/
@@ -481,7 +477,6 @@ footer .search button {
         align-items: center !important;
         justify-content: center !important;
         min-width: 370px;
-        /*margin: 1vh 0vw 10vh 0vw;*/
     }
 
     h1,
@@ -521,11 +516,7 @@ footer .search button {
     /******* Home (Grafico + Vision) Mobile*********/
     .home {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         margin-bottom: 50px;
-        /*margin: 1vh 0vw 1vh 0vw;*/
     }
 
     .home .vision div {
@@ -558,7 +549,7 @@ footer .search button {
         top: 0px;
         left: inherit;
         width: 89vw;
-        height: 36px;
+        height: 35px;
         background-color: rgb(255, 239, 234);
         z-index: -1;
     }
@@ -590,9 +581,6 @@ footer .search button {
     /******* TESTIMONIES MOBILE **********/
     .testimonies {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         margin-top: 100px;
         margin-bottom: 100px;
     }
@@ -621,8 +609,6 @@ footer .search button {
         scroll-snap-type: x mandatory;
         overflow-x: auto;
         overflow-y: visible;
-        width: 80vw;
-        margin: 0 auto;
         margin: 100px 10px 40px;
         width: 100%;
     }
@@ -688,11 +674,7 @@ footer .search button {
 
     /******* Footer Mobile ********/
     footer {
-        background-color: rgb(35, 44, 81);
-        color: white;
         width: 100%;
-        background-color: #1E1E26;
-        color: white;
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
