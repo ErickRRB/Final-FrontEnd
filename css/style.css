@@ -4,14 +4,13 @@
     box-sizing: border-box;
     margin: 0px;
     /*border: 1px solid red;*/
-    /*overflow: hidden;*/
 }
 
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
 
     /**Fondo**/
-    background-image: url("../img/bg-tablet-pattern.svg");
+    background-image: url("../img/bg-tablet-pattern.svg") !important;
     background-size: contain;
     background-position-x: 43px;
     background-repeat: repeat-y;
@@ -106,18 +105,21 @@ button {
     header .burguer-icon {
         display: none;
     }
-    header .sections nav{
+
+    header .sections nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 362px;
 
     }
-    header .sections{
+
+    header .sections {
         color: #242E52;
         font-size: 13px;
 
     }
+
     /******************* SECTION HOME *****************/
     section.home {
         flex-direction: row-reverse;
@@ -218,7 +220,7 @@ button {
         word-wrap: normal;
 
     }
-    
+
 
     /***************TESTIMONIES*************/
     section.testimonies {
@@ -227,9 +229,10 @@ button {
         justify-content: center;
         align-items: center;
         margin-top: 100px;
-        margin-bottom:100px;
+        margin-bottom: 100px;
     }
-    section.testimonies .articles  {
+
+    section.testimonies .articles {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -247,28 +250,97 @@ button {
         justify-content: center;
         align-items: center;
         height: auto;
-        background-color:rgb(249, 249, 249);
-        margin:0 10px;
-        padding: 0px 5px 0px; 
-    
+        background-color: rgb(249, 249, 249);
+        margin: 0 10px;
+        padding: 0px 5px 0px;
+
     }
-    section.testimonies div article p{
-        padding:30px 3px;
+
+    section.testimonies div article p {
+        padding: 30px 3px;
         text-align: center;
     }
 
-    section.testimonies div article h4{
-        padding-top:28px;
+    section.testimonies div article h4 {
+        padding-top: 28px;
         text-align: center;
     }
 
-    section.testimonies article img{
+    section.testimonies article img {
         margin-top: -35px;
         width: 70px;
         height: 70px;
- 
+
     }
+
     /***************** INICIO FRAME ROJO *************/
+    section.bottom-frame {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 64px 64px;
+
+    }
+
+    section.bottom-frame h2 {
+        color: white;
+        width: 500px;
+    }
+
+    /***************** FOOTER ******************/
+    footer {
+        background-color: #1E1E26;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 100px;
+    }
+    footer div:nth-child(1) > * {
+        margin:30px;
+    }
+    footer div:nth-child(2) {
+        justify-content: space-between;
+        width: 30%;
+    }
+
+    footer div:nth-child(3) > * {
+        margin-top: 40px;
+    }
+
+    footer .social-networks img{
+        margin: 0px 4px ;
+    }
+
+    footer .sections {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .sections nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .sections nav a {
+        color: white;
+        text-decoration: none;
+        margin: 6px 3px;
+        
+    }
+
+    footer .search input[type=email]{
+        transition: width 0.4s ease-in-out;
+        padding: 12px 10px;
+        border-radius: 50px;
+    }
+
+    footer .search button{
+        padding: 11.5px 22.5px;
+    }
+
+
 }
 
 /***************FIN DESTOP*********************/
