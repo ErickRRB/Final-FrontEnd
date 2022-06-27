@@ -91,7 +91,7 @@ button {
 
 }
 
-.box-shadow{
+.box-shadow {
     box-shadow: 0 7px 10px rgba(250, 129, 73, 0.534);
 }
 
@@ -115,7 +115,8 @@ header {
 
 }
 
-header .burguer-icon {
+/**** Todo lo que sea unico de mobile lo escondo en Desktop  ***/
+.mobile {
     display: none;
 }
 
@@ -129,7 +130,11 @@ header .sections nav {
 
 header .sections {
     color: #242E52;
-    font-size: 0.8em
+    font-size: 0.8em;
+}
+
+header .sections a{
+    text-decoration: none;
 }
 
 /******************* SECTION HOME *****************/
@@ -251,8 +256,56 @@ header .sections {
 }
 
 
+/********** FOOTER GENERICO ********/
+footer {
+    background-color: #1E1E26;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+footer div:nth-child(1)>* {
+    margin: 30px;
+}
 
 
+
+footer div:nth-child(3)>* {
+    margin-top: 40px;
+}
+
+footer .social-networks img {
+    margin: 0px 4px;
+}
+
+footer .sections {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .sections nav {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .sections nav a {
+    color: white;
+    text-decoration: none;
+    margin: 6px 3px;
+
+}
+
+footer .search input[type=email] {
+    /*transition: width 0.4s ease-in-out;*/
+    padding: 12px 25px;
+    border-radius: 50px;
+}
+
+footer .search button {
+    padding: 11.5px 22.5px;
+}
 
 @media (min-width: 1140px) {
     /******DESKTOP*****/
@@ -379,7 +432,7 @@ header .sections {
     }
 
     footer .search input[type=email] {
-        transition: width 0.4s ease-in-out;
+
         padding: 12px 10px;
         border-radius: 50px;
     }
@@ -388,6 +441,10 @@ header .sections {
         padding: 11.5px 22.5px;
     }
 
+    footer div:nth-child(2) {
+        justify-content: space-between;
+        width: 30%;
+    }
 }
 
 /***************FIN DESTOP*********************/
@@ -405,7 +462,7 @@ header .sections {
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
-        min-width: 375px;
+        min-width: 370px;
         /*margin: 1vh 0vw 10vh 0vw;*/
     }
 
@@ -422,16 +479,12 @@ header .sections {
         text-align: center;
     }
 
-    /*** Hidden durante Mobile **/
-    header button {
+    /*** Hidden/Visible durante Mobile **/
+    .desktop {
         display: none;
     }
 
-    header .sections {
-        display: none;
-    }
-
-    header .burguer-icon {
+    .mobile {
         display: block;
     }
 
@@ -496,7 +549,7 @@ header .sections {
         position: absolute;
         top: 0px;
         left: inherit;
-        width: 100vw;
+        width: 89vw;
         height: 36px;
         background-color: rgb(255, 239, 234);
         z-index: -1;
@@ -514,20 +567,84 @@ header .sections {
     }
 
     .about-us article div:nth-child(2) p {
-       /*text to the left*/
+        /*text to the left*/
         text-align: left;
         margin: 0px 25px 15px -70px;
         line-height: 2em;
-        
+
     }
 
+    .bottom-frame *{
+        margin: 20px -15px ;
 
-
-
+    }
     /******* Footer Mobile ********/
     footer {
         background-color: rgb(35, 44, 81);
         color: white;
+        width: 100%;
+        background-color: #1E1E26;
+        color: white;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer > *{
+        margin: 20px 0px 20px;
+    }
+    footer div:nth-child(1) {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 2px;
+    }
+
+    footer div .social-networks {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        margin: 10px;
+    }
+
+    footer div .social-networks img {
+        margin: 0px 15px;
+        width: 30px;
+    }
+
+    footer div:nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-left:15px;
+    }
+    footer div nav {
+        margin:0px 30px;
+    }
+
+    footer div:nth-child(3) form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    footer div form *{
+        margin: 0px 10px;
+    }
+
+    footer .search button {
+        
+        font-weight: 700;
+        padding: 11.5px 22.5px;
+    }
+
+    footer .copyright {
+        order: -1;
     }
 
 }
