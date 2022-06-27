@@ -133,7 +133,7 @@ header .sections {
     font-size: 0.8em;
 }
 
-header .sections a{
+header .sections a {
     text-decoration: none;
 }
 
@@ -188,56 +188,6 @@ header .sections a{
 
 
 
-/***************TESTIMONIES*************/
-.testimonies {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.testimonies .articles {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    margin: 100px 10px 40px;
-    width: 100%;
-}
-
-
-.testimonies div article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    background-color: rgb(249, 249, 249);
-    margin: 0 10px;
-    padding: 0px 5px 0px;
-
-}
-
-.testimonies div article p {
-    padding: 30px 3px;
-    text-align: center;
-}
-
-.testimonies div article h4 {
-    padding-top: 28px;
-    text-align: center;
-}
-
-.testimonies article img {
-    margin-top: -35px;
-    width: 70px;
-    height: 70px;
-
-}
 
 /***************** INICIO FRAME ROJO *************/
 .bottom-frame {
@@ -382,6 +332,77 @@ footer .search button {
         word-wrap: normal;
 
     }
+
+    /*****TESTIMONIES DESKTOP ****/
+    /***************TESTIMONIES*************/
+    .testimonies {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    /*** TESTIMONIES GENERICO ***/
+    .testimonies .item img {
+        margin-top: -35px;
+        width: 70px;
+        height: 70px;
+
+    }
+
+    .testimonies .articles .item h4 {
+        padding-top: 28px;
+        text-align: center;
+    }
+
+    .testimonies .articles .item p {
+        padding: 30px 3px;
+        text-align: center;
+    }
+
+    .testimonies .articles {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        margin: 100px 10px 40px;
+        width: 100%;
+    }
+
+
+    .testimonies .carousel .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        background-color: rgb(249, 249, 249);
+        margin: 0 10px;
+        padding: 0px 5px 0px;
+
+    }
+
+    .testimonies .carousel .item p {
+        padding: 30px 3px;
+        text-align: center;
+    }
+
+    .testimonies .carousel .item h4 {
+        padding-top: 28px;
+        text-align: center;
+    }
+
+    .testimonies .item img {
+        margin-top: -35px;
+        width: 70px;
+        height: 70px;
+
+    }
+
 
     .bottom-frame h2 {
         width: 600px;
@@ -574,10 +595,110 @@ footer .search button {
 
     }
 
-    .bottom-frame *{
-        margin: 20px -15px ;
+    .bottom-frame * {
+        margin: 20px -15px;
 
     }
+
+    /******* TESTIMONIES MOBILE **********/
+    .testimonies {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .testimonies .articles .item {
+        width: 90vw;
+        display: flex;
+
+
+    }
+
+    .testimonies .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin: 0 10px;
+        padding: 0px 5px 0px;
+
+    }
+
+    .testimonies .articles {
+        display: flex;
+        flex-direction: row;
+        scroll-snap-type: x mandatory;
+        overflow-x: auto;
+        overflow-y: visible;
+        width: 80vw;
+        margin: 0 auto;
+        margin: 100px 10px 40px;
+        width: 100%;
+    }
+
+    .testimonies .articles .item {
+        min-width: 80vw;
+        margin-left: 35px;
+        margin-right: 35px;
+        /*overflow: hidden;*/
+
+    }
+
+    .carousel {
+        scroll-snap-type: x mandatory;
+        scroll-padding: 0 24px
+    }
+
+    .carousel .item {
+        scroll-snap-align: center;
+    }
+
+    .testimonies .articles .item {
+        min-width: 80vw;
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-bottom: 30px;
+        position: relative
+    }
+
+    .testimonies .articles .item::after {
+        background-color: rgb(249, 249, 249);
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        top: 35px;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        
+    }
+    /*** TESTIMONIES GENERICO ***/
+    .testimonies .item img {
+
+        width: 70px;
+        height: 70px;
+
+    }
+
+    .testimonies .articles .item h4 {
+        padding-top: 28px;
+        text-align: center;
+    }
+
+    .testimonies .articles .item p {
+        padding: 30px 3px;
+        text-align: center;
+    }
+
+
     /******* Footer Mobile ********/
     footer {
         background-color: rgb(35, 44, 81);
@@ -591,9 +712,10 @@ footer .search button {
         align-items: center;
     }
 
-    footer > *{
+    footer>* {
         margin: 20px 0px 20px;
     }
+
     footer div:nth-child(1) {
         display: flex;
         flex-direction: column-reverse;
@@ -619,10 +741,11 @@ footer .search button {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        margin-left:15px;
+        margin-left: 15px;
     }
+
     footer div nav {
-        margin:0px 30px;
+        margin: 0px 30px;
     }
 
     footer div:nth-child(3) form {
@@ -633,12 +756,12 @@ footer .search button {
         flex-wrap: nowrap;
     }
 
-    footer div form *{
+    footer div form * {
         margin: 0px 10px;
     }
 
     footer .search button {
-        
+
         font-weight: 700;
         padding: 11.5px 22.5px;
     }
@@ -646,5 +769,6 @@ footer .search button {
     footer .copyright {
         order: -1;
     }
+    
 
 }
