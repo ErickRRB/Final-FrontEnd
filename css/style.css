@@ -557,7 +557,7 @@ footer .search button {
         position: absolute;
         top: 0px;
         left: inherit;
-        width: 89vw;
+        width: 90vw;
         height: 36px;
         background-color: rgb(255, 239, 234);
         z-index: -1;
@@ -757,5 +757,4 @@ footer .search button {
         order: -1;
     }
     
-
 }
