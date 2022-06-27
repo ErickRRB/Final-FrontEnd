@@ -1,0 +1,110 @@
+/************ABOUT-US*****************/
+section.about-us {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+/**El primer div es el bloque de la descripcion de Manage**/
+
+
+section.about-us>div {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+section.about-us>div p {
+    margin: 36px 0 0 0;
+    padding-right: 60px;
+}
+
+
+section.about-us article {
+    display: flex;
+    flex-direction: row;
+    width: 555px;
+}
+
+section.about-us article div:nth-child(1) {
+    /** Le doy formato a lo que parece un boton **/
+    color: white;
+    border: none;
+    border-radius: 50px;
+    height: fit-content;
+    padding: 10px 25px;
+
+}
+
+section.about-us article div:nth-child(2) {
+    /** Le doy formato a la segunda columna **/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 23px;
+    margin-top: 5px;
+
+}
+
+section.about-us article div:nth-child(2) * {
+    /** Le doy formato al contenido de la segunda columna**/
+    letter-spacing: -0.015em;
+    margin: 5px 0px 15px;
+    word-wrap: normal;
+
+}
+
+/***************** FOOTER ******************/
+footer {
+    background-color: #1E1E26;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+footer div:nth-child(1)>* {
+    margin: 30px;
+}
+
+footer div:nth-child(2) {
+    justify-content: space-between;
+    width: 30%;
+}
+
+footer div:nth-child(3)>* {
+    margin-top: 40px;
+}
+
+footer .social-networks img {
+    margin: 0px 4px;
+}
+
+footer .sections {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .sections nav {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .sections nav a {
+    color: white;
+    text-decoration: none;
+    margin: 6px 3px;
+
+}
+
+footer .search input[type=email] {
+    transition: width 0.4s ease-in-out;
+    padding: 12px 10px;
+    border-radius: 50px;
+}
+
+footer .search button {
+    padding: 11.5px 22.5px;
+}
+

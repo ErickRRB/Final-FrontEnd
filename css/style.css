@@ -4,6 +4,8 @@
     box-sizing: border-box;
     margin: 0px;
     /*border: 1px solid red;*/
+
+
 }
 
 body {
@@ -50,15 +52,15 @@ h5 {
 }
 
 h1 {
-    font-size: 56px;
+    font-size: 3.5em;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 2.5em;
 }
 
 h3 {
-    font-size: 36px;
+    font-size: 2.25em;
 }
 
 p {
@@ -88,112 +90,212 @@ button {
     padding: 12px 30px;
 }
 
+button.red:hover {
+    background-color: rgb(223, 158, 142);
+    color: white;
+}
+
+button.white:hover {
+    background-color: white;
+    color: rgb(223, 158, 142);
+}
+
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 165px;
+    width: 100%;
+
+}
+
+header .burguer-icon {
+    display: none;
+}
+
+header .sections nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 362px;
+
+}
+
+header .sections {
+    color: #242E52;
+    font-size: 0.8em
+}
+
+/******************* SECTION HOME *****************/
+.home {
+    flex-direction: row-reverse;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* Descomentar para desktop, prueba mobile*/
+
+}
+
+.home article {
+    /*Todo esto solo me sirve en Desktop*/
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: auto;
+    /*height: 386px;*/
+    position: relative;
+}
+
+
+.home article * {
+    margin: 10px auto;
+
+}
+
+.home article h1 {
+    letter-spacing: -0.035em;
+}
+
+.home article button {
+    bottom: 0;
+}
+
+
+/******* ABOUT US GENERICO *******/
+.about-us article div:nth-child(1) {
+    /** Le doy formato a lo que parece un boton **/
+    color: white;
+    border: none;
+    border-radius: 50px;
+    height: fit-content;
+    padding: 10px 25px;
+}
+
+
+
+/***************TESTIMONIES*************/
+.testimonies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.testimonies .articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    margin: 100px 10px 40px;
+    width: 100%;
+}
+
+
+.testimonies div article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: rgb(249, 249, 249);
+    margin: 0 10px;
+    padding: 0px 5px 0px;
+
+}
+
+.testimonies div article p {
+    padding: 30px 3px;
+    text-align: center;
+}
+
+.testimonies div article h4 {
+    padding-top: 28px;
+    text-align: center;
+}
+
+.testimonies article img {
+    margin-top: -35px;
+    width: 70px;
+    height: 70px;
+
+}
+
+/***************** INICIO FRAME ROJO *************/
+.bottom-frame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 64px 64px;
+
+}
+
+.bottom-frame h2 {
+
+    color: white;
+
+}
+
+
+
 
 
 @media (min-width: 1140px) {
+    /******DESKTOP*****/
 
     /*************DESKTOP***************/
-    header {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 165px;
-        width: 100%;
-
+    html {
+        font-size: 16px;
     }
 
-    header .burguer-icon {
-        display: none;
-    }
-
-    header .sections nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 362px;
-
-    }
-
-    header .sections {
-        color: #242E52;
-        font-size: 13px;
-
-    }
-
-    /******************* SECTION HOME *****************/
-    section.home {
-        flex-direction: row-reverse;
-        width: 80vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-
-    }
-
-    section.home article {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        flex-direction: column;
-        margin: 0 auto;
-        width: auto;
-        height: 386px;
-        position: relative;
-    }
-
-
-    section.home article * {
-        margin: 10px auto;
-
-    }
-
-
-    section.home article h1 {
+    .home article h1 {
         min-width: 460px;
-        letter-spacing: -0.035em;
-        font-size: 58px;
-
     }
 
-    section.home article p {
+    .home article p {
         padding-right: 100px;
-
     }
-
-    section.home article button {
-        bottom: 0;
-    }
-
-
 
     /************ABOUT-US*****************/
-    section.about-us {
+    .about-us {
         display: flex;
         justify-content: space-evenly;
         margin-top: 100px;
     }
 
     /**El primer div es el bloque de la descripcion de Manage**/
-    section.about-us>div {
+
+
+    .about-us>div {
         display: flex;
         flex-direction: column;
         width: 30%;
+
     }
 
-    section.about-us>div p {
+    .about-us>div p {
         margin: 36px 0 0 0;
         padding-right: 60px;
     }
 
 
-    section.about-us article {
+    .about-us article {
         display: flex;
         flex-direction: row;
         width: 555px;
+
     }
 
-    section.about-us article div:nth-child(1) {
+    .about-us article div:nth-child(1) {
         /** Le doy formato a lo que parece un boton **/
         color: white;
         border: none;
@@ -203,17 +305,19 @@ button {
 
     }
 
-    section.about-us article div:nth-child(2) {
+    .about-us article div:nth-child(2) {
         /** Le doy formato a la segunda columna **/
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin-left: 23px;
         margin-top: 5px;
+        margin-right: 18px;
+        margin: 5px 18px 0px;
 
     }
 
-    section.about-us article div:nth-child(2) * {
+    .about-us article div:nth-child(2) * {
         /** Le doy formato al contenido de la segunda columna**/
         letter-spacing: -0.015em;
         margin: 5px 0px 15px;
@@ -221,71 +325,8 @@ button {
 
     }
 
-
-    /***************TESTIMONIES*************/
-    section.testimonies {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-
-    section.testimonies .articles {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100%;
-        margin: 0 auto;
-        margin: 100px 10px 40px;
-        width: 100%;
-    }
-
-
-    section.testimonies div article {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        background-color: rgb(249, 249, 249);
-        margin: 0 10px;
-        padding: 0px 5px 0px;
-
-    }
-
-    section.testimonies div article p {
-        padding: 30px 3px;
-        text-align: center;
-    }
-
-    section.testimonies div article h4 {
-        padding-top: 28px;
-        text-align: center;
-    }
-
-    section.testimonies article img {
-        margin-top: -35px;
-        width: 70px;
-        height: 70px;
-
-    }
-
-    /***************** INICIO FRAME ROJO *************/
-    section.bottom-frame {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        padding: 64px 64px;
-
-    }
-
-    section.bottom-frame h2 {
-        color: white;
-        width: 500px;
+    .bottom-frame h2 {
+        width: 600px;
     }
 
     /***************** FOOTER ******************/
@@ -297,20 +338,22 @@ button {
         align-items: center;
         padding: 30px 100px;
     }
-    footer div:nth-child(1) > * {
-        margin:30px;
+
+    footer div:nth-child(1)>* {
+        margin: 30px;
     }
+
     footer div:nth-child(2) {
         justify-content: space-between;
         width: 30%;
     }
 
-    footer div:nth-child(3) > * {
+    footer div:nth-child(3)>* {
         margin-top: 40px;
     }
 
-    footer .social-networks img{
-        margin: 0px 4px ;
+    footer .social-networks img {
+        margin: 0px 4px;
     }
 
     footer .sections {
@@ -327,19 +370,18 @@ button {
         color: white;
         text-decoration: none;
         margin: 6px 3px;
-        
+
     }
 
-    footer .search input[type=email]{
+    footer .search input[type=email] {
         transition: width 0.4s ease-in-out;
         padding: 12px 10px;
         border-radius: 50px;
     }
 
-    footer .search button{
+    footer .search button {
         padding: 11.5px 22.5px;
     }
-
 
 }
 
@@ -347,44 +389,32 @@ button {
 
 /************MOBILE, RETOMAR AL FINAL *********/
 @media (max-width: 1140px) {
-    body {
-        background-position-x: 0px;
-        background-position-y: 0px;
+
+    html {
+        font-size: 13px;
     }
 
 
-    .about-us li * {
-        text-align: left;
-    }
-
-    section {
+    main>section {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        min-width: 375px;
+        /*margin: 1vh 0vw 10vh 0vw;*/
     }
 
-    section * {
+    /* section * {
         margin: 1vh 0vw 1vh 0vw;
         text-align: center;
-    }
-
-    /********* Header ***********/
-
-    .nav-bar {
-        flex-direction: row;
-        display: flex;
-        justify-content: space-between;
-        margin: 6% 3% 6% 3%;
-    }
-
-    .graphs img {
-        width: 95vw;
-        height: auto;
-        margin: 0 auto;
-        display: block;
-        margin-top: 10%;
-        margin-bottom: 10%;
+    } */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+        text-align: center;
     }
 
     /*** Hidden durante Mobile **/
@@ -400,8 +430,97 @@ button {
         display: block;
     }
 
+    /********* Header Mobile***********/
 
-    /******* Footer ********/
+    .nav-bar {
+        /*flex-direction: row;*/
+        display: flex;
+        justify-content: space-between;
+        margin: 1vh 3% 3% 3%;
+        width: 100vw;
+    }
+
+    .graphs img {
+        width: 90vw;
+        /*height: auto;*/
+        /*margin: 0 auto;*/
+        /*display: block;*/
+        /*margin-top: 10%;*/
+        /*margin-bottom: 10%;*/
+    }
+
+
+    /******* Main Mobile********/
+
+    /******* Home (Grafico + Vision) Mobile*********/
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+        /*margin: 1vh 0vw 1vh 0vw;*/
+    }
+
+    .home .vision div {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home article p {
+        padding: 0px 60px;
+        text-align: center;
+    }
+
+    section.about-us article div:nth-child(1) {
+        position: relative;
+        margin: 10px 10px;
+    }
+
+    .about-us article div:nth-child(1)::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: inherit;
+        width: 100vw;
+        height: 36px;
+        background-color: rgb(255, 239, 234);
+        z-index: -1;
+    }
+
+    section.about-us article div:nth-child(2) {
+        position: relative;
+        margin-top: 10px;
+
+    }
+    
+    .about-us article div h4 {
+        padding: 9px 0px;
+        margin-bottom:10px;
+       /* background-color: rgb(255, 239, 234);*/
+    }
+
+    section.about-us article div:nth-child(2) {
+        /** Le doy formato a la segunda columna **/
+        /*display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 1px;
+        margin-top: 5px;
+        background-color: red;*/
+    }
+
+
+    /****** About Us Mobile(Los Articulos) *****/
+    .about-us article {
+        display: flex;
+
+    }
+
+    /******* Footer Mobile ********/
     footer {
         background-color: rgb(35, 44, 81);
         color: white;
