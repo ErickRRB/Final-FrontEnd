@@ -544,8 +544,13 @@ footer .search button {
     /****** About Us Mobile(Los Articulos) *****/
     .about-us article {
         display: flex;
-
+        
     }
+
+    .about-us div:nth-child(1) > h3,p{
+        margin:0px 45px 25px;
+    }
+
 
     .about-us article div:nth-child(1) {
         position: relative;
@@ -665,8 +670,9 @@ footer .search button {
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
 
-        
+
     }
+
     /*** TESTIMONIES GENERICO ***/
     .testimonies .item img {
 
@@ -756,5 +762,5 @@ footer .search button {
     footer .copyright {
         order: -1;
     }
-    
+
 }
